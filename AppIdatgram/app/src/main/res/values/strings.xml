@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppIdatgram</string>
+    <string name="valTvTitulo">AUTENTICACIÓN</string>
+    <string name="valTvUsuario">Ingrese su usuario:</string>
+</resources>

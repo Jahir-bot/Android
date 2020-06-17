@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppRadioCheckIntent</string>
+    <string name="calchkDeporte">Deporte</string>
+    <string name="calchkJuegos">Video Juegos</string>
+    <string name="valrdbtnMujer">Mujer</string>
+    <string name="valrdbtnHombre">Hombre</string>
+    <string name="valrdbtnOtro">Otro</string>
+    <string name="btnIrCheck">Ir al ejemplo Check</string>
+    <string name="btnIrRadio">Ir al ejemplo Radio</string>
+    <string name="btnIrListView">Ir al ejemplo de ListView</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menú AppAdvanced"
+        android:textAlignment="center"
+        android:textColor="#1B5E20"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular factorial" />
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Determinar si es Capicua" />
+        <RadioButton
+            android:id="@+id/rdbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serie Fibonacci" />
+        <RadioButton
+            android:id="@+id/rdbtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suma serie de números" />
+        <RadioButton
+            android:id="@+id/rdbtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hallar MCM de dos números" />
+        <RadioButton
+            android:id="@+id/rdbtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hallar MCD de dos números" />
+        <RadioButton
+            android:id="@+id/rdbtn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hallar MCD de tres números" />
+        <RadioButton
+            android:id="@+id/rdbtn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular sueldo" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnImgresar"
+        android:text="Ingresar"
+        android:background="#1B5E20"
+        android:textStyle="bold"/>
+
+</LinearLayout>

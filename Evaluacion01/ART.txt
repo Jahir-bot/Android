@@ -1,0 +1,1 @@
+ART: Android RunTime se usa a partir de Android 5 y básicamente lo que hace es copilar todo el proyecto(aplicación) al momento de realizar la instalación sin necesidad de ejecutarla por primera vez, esto tiene beneficios como: ahorrar batería, recursos, entre otros. Anteriormente se usaba Dalvik y este hacía casi lo contrario; se compila acorda se usaba la aplicación.

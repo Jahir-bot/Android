@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgConcierto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTituloConcierto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtDescripcionConcierto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtFechaConcierto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrdenaMayorMenorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordenar de Mayor a Menor"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese primer número" />
+
+    <EditText
+        android:id="@+id/txtNumeroOrdenaMayor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese segundo número" />
+
+    <EditText
+        android:id="@+id/txtNumeroOrdenaMayor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese tercer número" />
+
+    <EditText
+        android:id="@+id/txtNumeroOrdenaMayor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnOrdenaMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EC407A"
+        android:text="Ordenar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOrdenaMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

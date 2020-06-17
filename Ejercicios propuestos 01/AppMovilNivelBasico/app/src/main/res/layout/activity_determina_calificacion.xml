@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeterminaCalificacionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de calificacion"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textColor="#EC407A"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese calificación"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNota"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalificacion"
+        android:text="Evaluar"
+        android:textStyle="bold"
+        android:background="#EC407A"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvClasificacion"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

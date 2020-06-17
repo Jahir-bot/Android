@@ -1,0 +1,67 @@
+public class MainActivity extends AppCompatActivity {
+
+    private EditText etTalla, etPeso;
+    private Button btnCalcular;
+    private TextView tvResultado;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        etTalla = findViewById(R.id.etTalla);
+        etPeso = findViewById(R.id.etPeso);
+        tvResultado = findViewById(R.id.tvResultado);
+        btnCalcular = findViewById(R.id.btncalcular);
+
+	DecimalFormat formato = new DecimalFormat("#.00");
+
+        btnCalcular.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if( etPeso.getText().toString().equals("") ){
+                    etPeso.setError("Dato Obligatorio");
+                }else if( etTalla.getText().toString().equals("") ){
+                    etTalla.setError("Dato Obligatorio");
+                }else {
+
+                    Double peso, talla, tallam, imc;
+                    String resultadoIMC = "";
+
+                    peso = Double.parseDouble(etPeso.getText().toString());
+                    talla = Double.parseDouble(etTalla.getText().toString());
+
+                    tallam = talla / 100;
+                    imc = peso / (tallam * tallam);
+
+                    if (imc <= 18.5) {
+                        resultadoIMC = "Por debajo del peso";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCBajo));
+                    } else if (imc <= 25) {
+                        resultadoIMC = "Con peso normal";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCNormal));
+                    } else if (imc <= 30) {
+                        resultadoIMC = "Con sobrepeso";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCSobrePeso));
+                    } else if (imc <= 35) {
+                        resultadoIMC = "Obesidad leve";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCObesidad));
+                    } else if (imc <= 39) {
+                        resultadoIMC = "Obesidad Media";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCObesidad1));
+                    } else {
+                        resultadoIMC = "Obesidad mórbida";
+                        tvResultado.setTextColor(getResources().getColor(R.color.colorIMCObesidad2));
+                    }
+
+                    tvResultado.setText("Su IMC es: " + imc.toString() + " , usted se encuentra : " +  formato.format( resultadoIMC ) );
+                    etTalla.setText("");
+                    etPeso.setText("");
+
+                }
+            }
+
+        });
+    }
+}

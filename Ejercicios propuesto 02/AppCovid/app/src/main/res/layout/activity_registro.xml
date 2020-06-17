@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Información"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="302dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="302dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="302dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <EditText
+        android:id="@+id/txtContra"
+        android:layout_width="302dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <RadioButton
+        android:id="@+id/rdbtnHombre"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignStart="@+id/chbArte"
+        android:layout_alignTop="@+id/rdbtnMujer"
+        android:text="Hombre"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <RadioButton
+        android:id="@+id/rdbtnMujer"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="215dp"
+        android:text="Mujer"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chbArte"
+        android:layout_marginBottom="190dp"
+        android:text="Hobbies"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <CheckBox
+        android:id="@+id/chbDeportes"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chbArte"
+        android:layout_marginBottom="156dp"
+        android:text="Deportes"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <CheckBox
+        android:id="@+id/chbArte"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtApellidos"
+        android:layout_marginBottom="122dp"
+        android:text="Arte"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <CheckBox
+        android:id="@+id/chbOtros"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chbArte"
+        android:layout_marginBottom="87dp"
+        android:text="Otros"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <EditText
+        android:id="@+id/txtOtros"
+        android:layout_width="302dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        style="@android:style/Widget.Button"
+        android:layout_width="201dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/txtOtros"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-41dp"
+        android:background="#283593"
+        android:drawableLeft="@mipmap/ic_launcher_foreground_check"
+        android:fontFamily="sans-serif"
+        android:text="Registrar"
+        android:textAlignment="viewStart"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu AppMedio"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular área de un circulo" />
+
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular área de un rectangulo" />
+
+        <RadioButton
+            android:id="@+id/rdbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular área de un triangulo" />
+
+        <RadioButton
+            android:id="@+id/rdbtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indentificar Año" />
+
+        <RadioButton
+            android:id="@+id/rdbtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serie de números" />
+
+        <RadioButton
+            android:id="@+id/rdbtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identifica el número mayor" />
+
+        <RadioButton
+            android:id="@+id/rdbtn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular edad" />
+
+        <RadioButton
+            android:id="@+id/rdbtn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumar dígitos" />
+        <RadioButton
+            android:id="@+id/rdbtn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indentificar número primo" />
+        <RadioButton
+            android:id="@+id/rdbtn10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Área y volumen de un cilindro" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E91E63"
+        android:text="Ingresar"
+        android:textStyle="bold" />
+
+</LinearLayout>

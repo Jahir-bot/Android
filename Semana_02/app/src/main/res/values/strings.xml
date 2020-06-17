@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Semana_02</string>
+    <string name="valtvtalla">Ingrese talla (cm):</string>
+    <string name="valtvtitulo">CALCULO DE IMC</string>
+    <string name="valtvpeso">Ingrese su peso :</string>
+    <string name="valbtncalcular">CALCULAR</string>
+    <string name="valbtnIMC">Ir al Ejercicio</string>
+    <string name="valbtnIMCCiclo">Vida de Ciclo</string>
+</resources>

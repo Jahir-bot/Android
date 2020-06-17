@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculadoraActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleecciones el tipo de operación:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbtnSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suma" />
+
+        <RadioButton
+            android:id="@+id/rbtnResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resta" />
+
+        <RadioButton
+            android:id="@+id/rbtnMultiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicación" />
+
+        <RadioButton
+            android:id="@+id/rbtnDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="División" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese primer número:" />
+
+    <EditText
+        android:id="@+id/txtPrimerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese segundo número:" />
+
+    <EditText
+        android:id="@+id/txtSegundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCalcularResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EC407A"
+        android:text="Calcular"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtvCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp" />
+
+</LinearLayout>

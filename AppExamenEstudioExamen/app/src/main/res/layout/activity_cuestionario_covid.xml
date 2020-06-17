@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".CuestionarioCovidActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="CUESTIONARIO COVID-19"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:text="1. Marca tus síntomas."
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/chkGusto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="38dp"
+        android:text="Disminución del gusto o del olfato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <CheckBox
+        android:id="@+id/chkTos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="190dp"
+        android:layout_marginStart="38dp"
+        android:text="Tos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkGusto" />
+
+    <CheckBox
+        android:id="@+id/chkGarganta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="231dp"
+        android:layout_marginStart="38dp"
+        android:text="Dolor de garganta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkTos" />
+
+    <CheckBox
+        android:id="@+id/chkNasal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="234dp"
+        android:layout_marginStart="38dp"
+        android:text="Congestión nasal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkGarganta" />
+
+    <CheckBox
+        android:id="@+id/chkFiebre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="304dp"
+        android:layout_marginStart="38dp"
+        android:text="Fiebre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkNasal" />
+
+    <CheckBox
+        android:id="@+id/chkNinguno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="290dp"
+        android:layout_marginStart="38dp"
+        android:text="Ninguno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkFiebre" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="317dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="2. ¿Tienes fiebre mayor a 37 grados?"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkNinguno" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="205dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="3. ¿Vives Solo en casa?"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="4. ¿Vives con un adulto mayor en casa?"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="5. ¿Cuentas con los siguientes servicios en casa?"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
+
+    <CheckBox
+        android:id="@+id/chkLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="319dp"
+        android:layout_marginStart="38dp"
+        android:text="Luz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <CheckBox
+        android:id="@+id/chkAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="309dp"
+        android:layout_marginStart="38dp"
+        android:text="Agua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkLuz" />
+
+    <CheckBox
+        android:id="@+id/chkInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="293dp"
+        android:layout_marginStart="38dp"
+        android:text="Internet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkAgua" />
+
+    <CheckBox
+        android:id="@+id/chkCable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="306dp"
+        android:layout_marginStart="38dp"
+        android:text="Cable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkInternet" />
+
+    <Button
+        android:id="@+id/btnResolver"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="5dp"
+        android:background="#859398"
+        android:text="Resolver"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkCable" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/rdbtnFiebreSi"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Si"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtnFiebreNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            tools:layout_editor_absoluteX="323dp"
+            tools:layout_editor_absoluteY="297dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <RadioButton
+            android:id="@+id/rdbtnSoloSi"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Si"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="349dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtnSoloNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            tools:layout_editor_absoluteX="323dp"
+            tools:layout_editor_absoluteY="348dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="251dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <RadioButton
+            android:id="@+id/rdbtnAdultoSi"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Si"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtnAdultoNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            tools:layout_editor_absoluteX="323dp"
+            tools:layout_editor_absoluteY="400dp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

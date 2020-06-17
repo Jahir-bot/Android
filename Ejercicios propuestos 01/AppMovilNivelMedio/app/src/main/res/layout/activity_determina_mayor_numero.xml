@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeterminaMayorNumeroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identificar el número mayor"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese primer número" />
+
+    <EditText
+        android:id="@+id/txtNumeroMayor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese segundo número" />
+
+    <EditText
+        android:id="@+id/txtNumeroMayor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese tercer número" />
+
+    <EditText
+        android:id="@+id/txtNumeroMayor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EC407A"
+        android:text="Ordenar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

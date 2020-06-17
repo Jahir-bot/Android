@@ -1,0 +1,19 @@
+Idea: Aplicación para el control de Stock
+Nombre: 
+
+- Login
+- Lista de productos existentes
+- Control de Ingreso de unidades al stock
+- Solicitud al area comercial de productos
+- Control de salida de unidades al stock
+- Reporte de Stock del día, mes y anual
+- Reporte de quiebres de stock
+
+Propiedad:
+- Codigo
+- Descripcion
+- Unidades
+- Valor de medida
+- Precio uni
+
+- 1 almacén
