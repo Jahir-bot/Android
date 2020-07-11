@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="productos_ud02_spinner">
+        <item>Pc de sobremesa</item>
+        <item>Portatil</item>
+        <item>Monitor</item>
+    </string-array>
+    <string-array name="productos2_ud02_spinner">
+        <item>Televisión</item>
+        <item>DVD</item>
+    </string-array>
+    <string-array name="productos3_ud02_spinner">
+        <item>Pixel</item>
+        <item>Galaxy</item>
+        <item>Iphone</item>
+        <item>Xiaomi</item>
+    </string-array>
+</resources>

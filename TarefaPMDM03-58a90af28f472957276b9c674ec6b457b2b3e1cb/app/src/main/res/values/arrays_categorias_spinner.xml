@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_ud02_spinner">
+        <item>Informática</item>
+        <item>Electrónica</item>
+        <item>Móviles</item>
+    </string-array>
+</resources>

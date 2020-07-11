@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/accion_HacerPedido"
+        android:title="Hacer pedido"
+        android:icon="@drawable/baseline_shop_black_18dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/accion_VerPedidos"
+        android:title="Pedidos"
+        android:icon="@drawable/baseline_all_inbox_black_18dp"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/accion_VerCompras"
+        android:title="Compras"
+        android:icon="@drawable/baseline_shopping_basket_black_18dp"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/accion_CerrarSesion"
+        android:title="Cerrar sesión"
+        app:showAsAction="never"/>
+
+
+</menu>
