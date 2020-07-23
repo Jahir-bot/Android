@@ -10,21 +10,16 @@ public class Producto {
     private String descripcion;
     private String enlaceImagen;
 
-    @Override
-    public String toString() {
-        return "Producto{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", categoria='" + categoria + '\'' +
-                ", costoUnitario=" + costoUnitario +
-                ", stock=" + stock +
-                ", descripcion='" + descripcion + '\'' +
-                ", enlaceImagen='" + enlaceImagen + '\'' +
-                '}';
-    }
-
     public Producto()
     {
+
+    }
+
+    public Producto( int id, String nombre,
+                    int stock) {
+        this.id = id;
+        this.nombre = nombre;
+        this.stock = stock;
 
     }
 

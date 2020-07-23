@@ -3,64 +3,102 @@ package com.example.apptiendavirtual_30.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.apptiendavirtual_30.Adapters.StockAdapter;
 import com.example.apptiendavirtual_30.R;
+import com.example.apptiendavirtual_30.model.Producto;
+import com.example.apptiendavirtual_30.model.URI;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link StockFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+
 public class StockFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private RecyclerView rvStock;
+    private StockAdapter stockAdapter;
+    private RequestQueue requestQueue;
+    private ArrayList<Producto> listaProductos;
+    private String urlBase = "/product/stock_low?numberMin=11";
 
     public StockFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment StockFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static StockFragment newInstance(String param1, String param2) {
-        StockFragment fragment = new StockFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_stock, container, false);
+        View view = inflater.inflate(R.layout.fragment_stock, container, false);
+
+        rvStock = view.findViewById(R.id.reciclerStock);
+
+        rvStock.setLayoutManager(new LinearLayoutManager(getContext()));
+        stockAdapter = new StockAdapter(getContext());
+        rvStock.setAdapter(stockAdapter);
+        //rvDatos.setLayoutManager(gridLayoutManager);
+        listaProductos= new ArrayList<>();
+        requestQueue = Volley.newRequestQueue(getContext());
+        WS();
+
+        return view;
+    }
+    public void WS()
+    {
+        URI url = new URI();
+
+        JsonObjectRequest jsonObjectRequest=new
+                JsonObjectRequest(Request.Method.GET, url.getUrl()+urlBase, null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+
+                            JSONArray jsonArray = response.getJSONArray("list");
+                            if (jsonArray.length()>0)
+                            {
+                                ArrayList<Producto> lstProducto = new ArrayList<>();
+                                for (int i=0;i<jsonArray.length();i++)
+                                {
+                                    JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                    lstProducto.add(new Producto(
+                                            jsonObject.getInt("id"),
+                                            jsonObject.getString("nombre"),
+                                            jsonObject.getInt("stock")
+                                    ));
+                                }
+                                stockAdapter.addProductos(lstProducto);
+                            }
+                        }catch (JSONException e)
+                        {
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(jsonObjectRequest);
     }
 }
